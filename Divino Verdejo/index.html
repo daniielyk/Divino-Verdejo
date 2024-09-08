@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Divino Verdejo </title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type= "image/png" href="/images/logo.png">
+    <!---icono para la pestaña--->
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="/images/logo.png" alt="logo divino verdejo" style="width: 90px;" class="logo">
+        <h1 class="title"> Divino Verdejo </h1>
+        <nav class="navbar">
+            <div class="hamburger-menu" id="hamburger-menu">
+                &#9776;
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#carta"> Carta </a></li>
+                <li><a href="/presentacion.html"> Quiénes somos </a></li>
+                <li><a href="/reserva.html"> Haz tu reserva </a></li>
+                <li><a href="/trabaja.html"> Trabaja con nosotros </a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="estatic">
+    </div>
+    <main>
+        <section id="carta">
+            <h1> Carta </h1>
+            <p class="opciones"> Pulsa en cada opción para ver más detalles *</p>
+            <div class="container">
+                <h3> Va acompañado de café y zumo </h3>
+                <section class="menu-section">
+                    <h2> Desayunos </h2>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Tostada de mantequilla y mermelada ▾ </h4>
+                        <span>€3.50</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-nachos.jpg" alt="Tostada de mantequilla y mermelada">
+                            <p><strong>Alérgenos:</strong> Leche, Gluten</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Tostada de tomate natural con aove ▾ </h4>
+                        <span>€3.60</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-patatas.jpg" alt="Tostada de tomate natural con aove">
+                            <p><strong>Alérgenos:</strong> Gluten </p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Tostada de tomate natural con jamón ▾ </h4>
+                        <span>€6.00</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-queso-frito.jpg" alt="Tostada de tomate natural con jamón">
+                            <p><strong>Alérgenos:</strong> Gluten</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Tostada de aguacate y huevo poché ▾ </h4>
+                        <span>€5.80</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-queso-frito.jpg" alt="Tostada de aguacate y huevo poché">
+                            <p><strong>Alérgenos:</strong> Gluten y huevos </p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Tostada de huevos revueltos con bacon ▾ </h4>
+                        <span>€5.60</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-queso-frito.jpg" alt="Tostada de huevos revueltos con bacon">
+                            <p><strong>Alérgenos:</strong> Gluten y huevos </p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Cruasan normal o plancha ▾ </h4>
+                        <span>€3.80</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-queso-frito.jpg" alt="Cruasan normal o plancha">
+                            <p><strong>Alérgenos:</strong> Gluten, huevos y frutos secos ▾ </p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Pincho de tortilla de patata ▾ </h4>
+                        <span>€2.00</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-queso-frito.jpg" alt="Pincho de tortilla de patata">
+                            <p><strong>Alérgenos:</strong> Huevos </p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Pincho de tortilla rellena ▾ </h4>
+                        <span>€2.50</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-queso-frito.jpg" alt="Pincho de tortilla rellena">
+                            <p><strong>Alérgenos:</strong> Huevos y leche </p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Sandwich mixto ▾ </h4>
+                        <span>€4.70</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-queso-frito.jpg" alt="Sandwich mixto">
+                            <p><strong>Alérgenos:</strong> Gluten y leche</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="menu-section">
+                    <h2> Raciones </h2>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Croquetas (6 ud) (Boletus-Jamón) ▾ </h4>
+                        <span>€9.50</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-hamburguesa.jpg" alt="Hamburguesa Especial">
+                            <p><strong>Alérgenos:</strong> Gluten, Leche, Huevo</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Patatas bravas o rancheras ▾ </h4>
+                        <span>€8.80</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-pasta.jpg" alt="Pasta Carbonara">
+                            <p><strong>Alérgenos:</strong> Leche, Huevo</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Ensaladilla rusa con huevo frito ▾ </h4>
+                        <span>€7.30</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-ensalada.jpg" alt="Ensalada César">
+                            <p><strong>Alérgenos:</strong> Huevo </p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Torreznos con guacamole ▾ </h4>
+                        <span>€8.90</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-ensalada.jpg" alt="Ensalada César">
+                            <p><strong>Alérgenos:</strong> No hay </p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Cachopo asturiano (Jamón, queso de cabrales) ▾ </h4>
+                        <span>€23.0</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-ensalada.jpg" alt="Ensalada César">
+                            <p><strong>Alérgenos:</strong> Gluten, leche y huevo </p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Oreja frita con salsa picante ▾ </h4>
+                        <span>€9.50</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-ensalada.jpg" alt="Ensalada César">
+                            <p><strong>Alérgenos:</strong> Gluten </p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Lagarto ibérico con patatas ▾ </h4>
+                        <span>€14.30</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-ensalada.jpg" alt="Ensalada César">
+                            <p><strong>Alérgenos:</strong> No hay </p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Tira argentina con patatas ▾ </h4>
+                        <span>€16.50</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-ensalada.jpg" alt="Ensalada César">
+                            <p><strong>Alérgenos:</strong> No hay </p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Rabas caseras ▾ </h4>
+                        <span>€13.50</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-ensalada.jpg" alt="Ensalada César">
+                            <p><strong>Alérgenos:</strong> Gluten </p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Alcachofas fritas con romescu ▾ </h4>
+                        <span>€12.00</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-ensalada.jpg" alt="Ensalada César">
+                            <p><strong>Alérgenos:</strong> Frutos secos </p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Huevos rotos con jamón ▾ </h4>
+                        <span>€13.00</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-ensalada.jpg" alt="Ensalada César">
+                            <p><strong>Alérgenos:</strong> Huevo </p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Huevos rotos con salchichas ▾ </h4>
+                        <span>€13.00</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-ensalada.jpg" alt="Ensalada César">
+                            <p><strong>Alérgenos:</strong> Huevo </p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Huevos rotos con jijas ▾ </h4>
+                        <span>€13.00</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-ensalada.jpg" alt="Ensalada César">
+                            <p><strong>Alérgenos:</strong> Huevo </p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Bocadillos ibéricos ▾ </h4>
+                        <span>€4.50</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-ensalada.jpg" alt="Ensalada César">
+                            <p><strong>Alérgenos:</strong> Gluten </p>
+                            <p> Lomo, salchichón, chorizo y queso </p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Bocadillo tortilla patata o francesa ▾ </h4>
+                        <span>€3.50</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-ensalada.jpg" alt="Ensalada César">
+                            <p><strong>Alérgenos:</strong> Huevo y gluten </p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Tabla de embutidos ibéricos ▾ </h4>
+                        <span>€22.00</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-ensalada.jpg" alt="Ensalada César">
+                            <p><strong>Alérgenos:</strong> </p>
+                            <p> Lomo, salchichón, chorizo y queso </p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Cecina de león ▾ </h4>
+                        <span>€15.00</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-ensalada.jpg" alt="Ensalada César">
+                            <p><strong>Alérgenos:</strong> No hay </p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Plato combinado (con patatas fritas) ▾ </h4>
+                        <span>€14.00</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-ensalada.jpg" alt="Ensalada César">
+                            <p> <strong> Opciones: </strong><br><br>
+                                -Ternera <br>
+                                -Pollo <br>
+                                -Lomo <br>
+                                -Emperador <br>
+                                -Tomate <br>
+                                -Ensalada <br>
+                                -Ensaladilla rusa <br>
+                                -Espárragos
+                            </p>
+                            <p><strong>Alérgenos:</strong>  </p>
+                        </div>
+                    </div><br>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Ensalada de burrata con tomate ▾ </h4>
+                        <span>€12.50</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-ensalada.jpg" alt="Ensalada César">
+                            <p><strong>Alérgenos:</strong> Leche </p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Ensalada de cecina y queso de cabra ▾ </h4>
+                        <span>€13.50</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-ensalada.jpg" alt="Ensalada César">
+                            <p><strong>Alérgenos:</strong> Leche </p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Ensalada de tomate, aguacate y rúcula ▾ </h4>
+                        <span>€12.50</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-ensalada.jpg" alt="Ensalada César">
+                            <p><strong>Alérgenos:</strong> No hay </p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Ensalada de ventresca, pimientos asados y piparras ▾ </h4>
+                        <span>€13.50</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-ensalada.jpg" alt="Ensalada César">
+                            <p><strong>Alérgenos:</strong> No hay </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="menu-section">
+                    <h2> Menús </h2>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Smash burger de chuleta de vaca con bacon y queso ▾ </h4>
+                        <span>€14.50</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-cerveza.jpg" alt="Cerveza Artesanal">
+                            <p> -Pan Brioche de patatas <br>
+                                -Doble Carne de chuleta con 60 días de maduración <br>
+                                -Queso fundido, cebolla, y bacon crujiente y nuestra salsa divina y patatas
+                            </p>
+                            <p><strong>Alérgenos:</strong> Gluten y leche </p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Chuleta divina ▾ </h4>
+                        <span>€55.00</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-vino.jpg" alt="Copa de Vino">
+                            <p> -Chuleta añojo 1 Kg aprox. (40 días maduración) <br>
+                                -Ensalada <br>
+                                -Patatas
+                            </p>
+                            <p><strong>Alérgenos:</strong> Nada</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Entrecot divino ▾ </h4>
+                        <span>€22.00</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-refresco.jpg" alt="Refresco">
+                            <p> -Entrecot añojo (40 días maduración) <br>
+                                -Ensalada <br>
+                                -Patatas
+                            </p>
+                            <p><strong>Alérgenos:</strong> Ninguno</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Chuletillas de lechazo ▾ </h4>
+                        <span>€22.00</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-refresco.jpg" alt="Refresco">
+                            <p> -Chuletillas de Lechazo <br>
+                                -Ensalada <br>
+                                -Patatas
+                            </p>
+                            <p><strong>Alérgenos:</strong> Ninguno</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="menu-section">
+                    <h2>Postres</h2>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)">Tarta de queso ▾ </h4>
+                        <span>€6.50</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-tarta.jpg" alt="Tarta de Chocolate">
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)">Flan de nata ▾ </h4>
+                        <span>€6.50</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-helado.jpg" alt="Helado Variado">
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)">Tarta de Lotus ▾ </h4>
+                        <span>€6.50</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-flan.jpg" alt="Flan de la Casa">
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h4 onclick="toggleDetails(this)"> Tarta de chocolate ▾ </h4>
+                        <span>€6.50</span>
+                        <div class="details">
+                            <img src="ruta-de-tu-imagen-de-flan.jpg" alt="Flan de la Casa">
+                        </div>
+                    </div>
+                </section>
+            </div>
+    </main>
+</body>
+</html>
